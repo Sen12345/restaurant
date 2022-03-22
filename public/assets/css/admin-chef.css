@@ -1,0 +1,13 @@
+@media only screen and (max-width: 768px) {
+
+   .header-area{
+       
+   }
+
+   .nav{
+       position: absolute !important;
+       top:0;
+       bottom: 0;
+   }
+
+  }

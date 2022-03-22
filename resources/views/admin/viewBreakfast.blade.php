@@ -1,0 +1,35 @@
+@extends('admin.adminhome')
+
+
+@section('content')
+<div class="container">
+<div class="row">
+    <div class="col-sx-12 col-sm-12 col-md-12">
+    <h2 class=" mt-4 text-center text-success">BREAKFAST</h2>
+        <div class="table-responsive" style="width:100%">
+            <table class="table p-3 text-white m-auto">
+                <tr>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>DESCRIPTION</th>
+                    <th>Image</th>
+                </tr>
+                @foreach($breakfast as $breakfasts)
+                <tr>
+                    <td>{{ $breakfasts->title }}</td>
+                    <td>{{ $breakfasts->price }}</td>
+                    <td>{{ $breakfasts->description }}</td>
+                    <td><img src="./storage/breakfast/{{ $breakfasts->image }}"  style="cursor:pointer; border-radius:0"></td>
+                    <td><a class="btn btn-success" href="{{ url('updateBreakfast', $breakfasts->id) }}">Update</a></td>
+                    <td><a class="btn btn-success" href="{{ url('deleteBreakfast', $breakfasts->id) }}">Delete</a></td>
+                </tr>
+                @endforeach
+            </table>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+@endsection
