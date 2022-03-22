@@ -1,10 +1,10 @@
-## About Laravel
+## About This Project
 
 A fully database driven e-commerce website with an integrated  aesthetic and elegant template enhances the user experiece of restaurant bookings and buyig food online. 
 Please see features and functionalities inplemented below:
 
-- Admin section with CMS to perform CRUD o food menus
-- Shoppig cart to but food online
+- Admin section with CMS to perform CRUD on food menus
+- Shopping cart to but food online
 - Reservation interface to book seat in advance
 - Breakfast , lunch and dinner menu 
 
